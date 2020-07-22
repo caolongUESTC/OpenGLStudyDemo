@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OpenGLView.h
 //  OpenGLCoding01
 //
 //  Created by 曹龙 on 2020/7/22.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+NS_ASSUME_NONNULL_BEGIN
+
+@interface OpenGLView : UIView
 
 @end
 
+NS_ASSUME_NONNULL_END

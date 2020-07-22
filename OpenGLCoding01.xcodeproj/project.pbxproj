@@ -14,6 +14,9 @@
 		C4FEEED424C7ED5200EE2137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FEEED324C7ED5200EE2137 /* Assets.xcassets */; };
 		C4FEEED724C7ED5200EE2137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FEEED524C7ED5200EE2137 /* LaunchScreen.storyboard */; };
 		C4FEEEDA24C7ED5200EE2137 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FEEED924C7ED5200EE2137 /* main.m */; };
+		C4FEEEE324C8129800EE2137 /* OpenGLCompileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FEEEE224C8129800EE2137 /* OpenGLCompileUtil.m */; };
+		C4FEEEE724C82EBC00EE2137 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FEEEE624C82EBC00EE2137 /* OpenGLView.m */; };
+		C4FEEEEB24C8420C00EE2137 /* OpenGLConvertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FEEEEA24C8420C00EE2137 /* OpenGLConvertUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		C4FEEED624C7ED5200EE2137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4FEEED824C7ED5200EE2137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4FEEED924C7ED5200EE2137 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4FEEEE124C8125D00EE2137 /* OpenGLCompileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLCompileUtil.h; sourceTree = "<group>"; };
+		C4FEEEE224C8129800EE2137 /* OpenGLCompileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLCompileUtil.m; sourceTree = "<group>"; };
+		C4FEEEE524C82EBC00EE2137 /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		C4FEEEE624C82EBC00EE2137 /* OpenGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		C4FEEEE924C8420C00EE2137 /* OpenGLConvertUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLConvertUtil.h; sourceTree = "<group>"; };
+		C4FEEEEA24C8420C00EE2137 /* OpenGLConvertUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLConvertUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +70,13 @@
 		C4FEEEC624C7ED5200EE2137 /* OpenGLCoding01 */ = {
 			isa = PBXGroup;
 			children = (
+				C4FEEEE824C841EF00EE2137 /* OpenGLConvert */,
+				C4FEEEE424C82E8600EE2137 /* View */,
+				C4FEEEE024C8123900EE2137 /* OpenGLCompile */,
 				C4FEEEC724C7ED5200EE2137 /* AppDelegate.h */,
 				C4FEEEC824C7ED5200EE2137 /* AppDelegate.m */,
 				C4FEEECA24C7ED5200EE2137 /* SceneDelegate.h */,
 				C4FEEECB24C7ED5200EE2137 /* SceneDelegate.m */,
-				C4FEEECD24C7ED5200EE2137 /* ViewController.h */,
-				C4FEEECE24C7ED5200EE2137 /* ViewController.m */,
 				C4FEEED024C7ED5200EE2137 /* Main.storyboard */,
 				C4FEEED324C7ED5200EE2137 /* Assets.xcassets */,
 				C4FEEED524C7ED5200EE2137 /* LaunchScreen.storyboard */,
@@ -74,6 +84,35 @@
 				C4FEEED924C7ED5200EE2137 /* main.m */,
 			);
 			path = OpenGLCoding01;
+			sourceTree = "<group>";
+		};
+		C4FEEEE024C8123900EE2137 /* OpenGLCompile */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEEEE124C8125D00EE2137 /* OpenGLCompileUtil.h */,
+				C4FEEEE224C8129800EE2137 /* OpenGLCompileUtil.m */,
+			);
+			path = OpenGLCompile;
+			sourceTree = "<group>";
+		};
+		C4FEEEE424C82E8600EE2137 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEEECD24C7ED5200EE2137 /* ViewController.h */,
+				C4FEEECE24C7ED5200EE2137 /* ViewController.m */,
+				C4FEEEE524C82EBC00EE2137 /* OpenGLView.h */,
+				C4FEEEE624C82EBC00EE2137 /* OpenGLView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4FEEEE824C841EF00EE2137 /* OpenGLConvert */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEEEE924C8420C00EE2137 /* OpenGLConvertUtil.h */,
+				C4FEEEEA24C8420C00EE2137 /* OpenGLConvertUtil.m */,
+			);
+			path = OpenGLConvert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4FEEECF24C7ED5200EE2137 /* ViewController.m in Sources */,
+				C4FEEEE724C82EBC00EE2137 /* OpenGLView.m in Sources */,
+				C4FEEEEB24C8420C00EE2137 /* OpenGLConvertUtil.m in Sources */,
 				C4FEEEC924C7ED5200EE2137 /* AppDelegate.m in Sources */,
 				C4FEEEDA24C7ED5200EE2137 /* main.m in Sources */,
+				C4FEEEE324C8129800EE2137 /* OpenGLCompileUtil.m in Sources */,
 				C4FEEECC24C7ED5200EE2137 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
